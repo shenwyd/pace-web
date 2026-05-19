@@ -1,0 +1,21 @@
+title: Pace
+description: Harm reduction for nights out.
+author: Danny Shen
+email: shendanny1@gmail.com
+url: "https://shenwyd.github.io"
+baseurl: "/pace-web"
+
+theme: minima
+markdown: kramdown
+
+minima:
+  skin: classic
+
+header_pages:
+  - privacy.md
+  - support.md
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
