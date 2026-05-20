@@ -1,0 +1,25 @@
+<nav class="nav" id="siteNav">
+  <div class="shell nav-inner">
+    <a href="{{ '/' | relative_url }}" class="wordmark" aria-label="Pace home">
+      pace<span class="dot">.</span>
+    </a>
+    <div class="nav-links">
+      <a href="{{ '/#features' | relative_url }}">Features</a>
+      <a href="{{ '/#privacy' | relative_url }}">Privacy</a>
+      <a href="{{ '/support/' | relative_url }}">Support</a>
+      <a href="mailto:{{ site.email }}" class="btn btn-ghost">Contact</a>
+    </div>
+  </div>
+</nav>
+<script>
+  (function () {
+    var nav = document.getElementById('siteNav');
+    if (!nav) return;
+    var onScroll = function () {
+      if (window.scrollY > 8) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+</script>

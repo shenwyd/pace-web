@@ -1,0 +1,219 @@
+---
+layout: default
+---
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="shell hero-grid">
+      <div class="hero-copy">
+        <span class="pill">Coming soon · iPhone</span>
+        <h1>Drink smarter.<br>Get home <span class="accent">safer.</span></h1>
+        <p class="lede">
+          Pace is a quiet companion for the nights you choose to drink.
+          Live BAC estimates, a ride home locked in before the first drink,
+          and tools to look out for yourself — all without your data ever
+          leaving your phone.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="{{ '/#features' | relative_url }}">See how it works</a>
+          <a class="btn btn-ghost" href="{{ '/#privacy' | relative_url }}">Why it's private</a>
+        </div>
+        <p class="hero-foot">Built for 18–25 year-olds at or above the legal drinking age. iPhone only at launch.</p>
+      </div>
+      <div class="hero-art">
+        <div class="phone">
+          <div class="phone-screen">
+            <img src="{{ '/assets/img/screens/tonight.png' | relative_url }}" alt="Pace Tonight tab on iPhone — current BAC 0.000, sober, drink grid for beer, wine, cocktail, shot, seltzer.">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE CARDS -->
+  <section id="values" class="tight">
+    <div class="shell">
+      <div class="values">
+        <div class="value-card">
+          <div class="icon sober">✓</div>
+          <h3>Live BAC, your way</h3>
+          <p>Widmark math tuned for your weight, biological sex, and tolerance. Updates in real time, with a sober-by countdown ticking down.</p>
+        </div>
+        <div class="value-card">
+          <div class="icon">→</div>
+          <h3>Plan first, drink later</h3>
+          <p>Lock in your ride home before the first drink. Uber, Lyft, transit, designated driver, or text a contact — all one tap.</p>
+        </div>
+        <div class="value-card">
+          <div class="icon blue">●</div>
+          <h3>Lives on your phone</h3>
+          <p>No accounts. No servers. No analytics. Every drink, every estimate, every contact stays on your iPhone — period.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE 1 — Tonight -->
+  <section id="features">
+    <div class="shell">
+      <div class="feature">
+        <div>
+          <span class="cap">Tonight tab</span>
+          <h3>Always know where you stand.</h3>
+          <p>Tap a drink. Pace updates your BAC, sober-by time, and status pill instantly — no fiddling with calculators or guessing how many "standards" your cocktail was.</p>
+          <ul>
+            <li>Beer, wine, cocktail, shot, seltzer, or custom drinks</li>
+            <li>Sleep-aware: under six hours boosts your estimate by 15%</li>
+            <li>Nightly limit you set — gentle reminder, never a lecture</li>
+            <li>Water counter, because hydration is the cheat code</li>
+          </ul>
+        </div>
+        <div class="hero-art">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="{{ '/assets/img/screens/tonight.png' | relative_url }}" alt="Tonight tab screenshot showing BAC reading and drink-logging grid.">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE 2 — Safety guardrails -->
+  <section style="background: var(--bg-deep);">
+    <div class="shell">
+      <div class="feature reverse">
+        <div>
+          <span class="cap">Safety guardrails</span>
+          <h3>The app that <em>actually</em> tells you not to drive.</h3>
+          <p>Most drinking apps cheer you on. Pace pulls you aside. If your BAC creeps up and you haven't picked a ride, you get a calm interrupt — not a popup you can swipe away in panic.</p>
+          <ul>
+            <li>"How are you getting home?" prompt before it matters</li>
+            <li>SOS shortcut to a saved emergency contact</li>
+            <li>Pre-loaded home address on Uber + Lyft deep links</li>
+            <li>Pregnancy warning surfaces once, then leaves you alone</li>
+          </ul>
+        </div>
+        <div class="hero-art">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="{{ '/assets/img/screens/safety-warning.png' | relative_url }}" alt="Drive warning modal: how are you getting home? Set a ride plan or dismiss.">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE 3 — Week -->
+  <section>
+    <div class="shell">
+      <div class="feature">
+        <div>
+          <span class="cap">Week tab</span>
+          <h3>The honest mirror, just for you.</h3>
+          <p>See every drink you logged, when you logged it, and how heavy the week ran. No streaks. No leaderboards. Just the number — because awareness is the first step, and pressure is the second mistake.</p>
+          <ul>
+            <li>Recent-activity timeline with drink type + standard-drink count</li>
+            <li>Nightly totals roll up in the home-screen widget</li>
+            <li>Stored locally — delete the app to delete every byte</li>
+          </ul>
+        </div>
+        <div class="hero-art">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="{{ '/assets/img/screens/week.png' | relative_url }}" alt="Week tab showing recent activity list with beer, shot, seltzer, cocktail entries.">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY BLOCK -->
+  <section id="privacy">
+    <div class="shell">
+      <div class="privacy-block">
+        <span class="cap">Privacy</span>
+        <h2>Your night is <span class="accent">yours.</span><br>Your data stays where it belongs.</h2>
+        <p>Pace was built local-first from day one. There are no accounts, no logins, no cloud sync, no analytics SDKs, no growth experiments running against you. The data model is whatever's on your phone — and nothing else.</p>
+        <div class="privacy-grid">
+          <div>
+            <strong>No accounts</strong>
+            <span>You don't sign up. You just open the app.</span>
+          </div>
+          <div>
+            <strong>No servers</strong>
+            <span>There is no backend. There is no "us" with your data.</span>
+          </div>
+          <div>
+            <strong>No analytics</strong>
+            <span>No Mixpanel, no Amplitude, no Firebase events.</span>
+          </div>
+          <div>
+            <strong>No ads, ever</strong>
+            <span>No upsells, no in-app purchases, no plans to add any.</span>
+          </div>
+          <div>
+            <strong>HealthKit is read-only</strong>
+            <span>Pace reads sleep + heart rate. Nothing is written back.</span>
+          </div>
+          <div>
+            <strong>Delete = gone</strong>
+            <span>Remove the app and every byte goes with it.</span>
+          </div>
+        </div>
+        <p style="margin-top:32px;">
+          <a href="{{ '/privacy/' | relative_url }}" class="btn btn-primary">Read the full privacy policy</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section class="tight">
+    <div class="shell">
+      <div class="section-head">
+        <span class="cap">Honesty section</span>
+        <h2>Pace isn't for everyone — and that's the point.</h2>
+        <p>Harm reduction means meeting people where they are. If you're already not drinking, the best app is no app. If you're drinking dangerously, an app isn't the help you need. Here's where Pace sits.</p>
+      </div>
+      <div class="audience">
+        <div class="card">
+          <span class="cap">Pace is for</span>
+          <h3>People who already drink and want to do it on their terms.</h3>
+          <ul>
+            <li>You're at or above the legal drinking age</li>
+            <li>You want to stay aware, not policed</li>
+            <li>You'd rather decide your ride sober than negotiate it drunk</li>
+            <li>You value privacy more than badges or streaks</li>
+          </ul>
+        </div>
+        <div class="card muted">
+          <span class="cap">Pace is not for</span>
+          <h3>Anyone Pace can't actually help.</h3>
+          <ul>
+            <li>Under-age users — the app blocks you, and that's by design</li>
+            <li>Anyone making a driving decision based on a BAC estimate</li>
+            <li>People in crisis — call your local emergency line first</li>
+            <li>Anyone looking for a sobriety / abstinence tracker (try a recovery program)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="shell">
+      <div class="cta-strip">
+        <span class="cap">What's next</span>
+        <h2>Pace launches on the App Store soon.</h2>
+        <p>Want first-day access, behind-the-scenes notes from the build, or to talk through harm-reduction product design? Send a note — I read every email.</p>
+        <a href="mailto:{{ site.email }}" class="btn btn-primary">Email {{ site.email }}</a>
+      </div>
+    </div>
+  </section>
+
+</main>

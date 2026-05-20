@@ -1,19 +1,11 @@
 title: Pace
-description: Harm reduction for nights out.
+description: Harm reduction for nights out. A quiet companion for the nights you choose to drink — live BAC estimates, ride plans, and tools to look out for yourself. iPhone only. No accounts, no servers.
 author: Danny Shen
 email: shendanny1@gmail.com
 url: "https://shenwyd.github.io"
 baseurl: "/pace-web"
 
-theme: minima
 markdown: kramdown
-
-minima:
-  skin: classic
-
-header_pages:
-  - privacy.md
-  - support.md
 
 exclude:
   - README.md

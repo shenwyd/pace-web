@@ -4,8 +4,6 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-# Privacy Policy
-
 *Last updated: May 2026*
 
 Pace is built for a single rule: **your data is yours.** We don't have servers. We don't have analytics. We don't track you. Nothing you do in Pace is sent to us or to anyone else.

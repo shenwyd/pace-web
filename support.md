@@ -4,8 +4,6 @@ title: Support
 permalink: /support/
 ---
 
-# Support
-
 Need help with Pace, found a bug, or want to share feedback? Email **[shendanny1@gmail.com](mailto:shendanny1@gmail.com)** and you'll hear back within a few days.
 
 This page covers the questions that come up most often.
