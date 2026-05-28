@@ -127,6 +127,6 @@ If this policy changes, you'll see a notice in the app on next launch summarizin
 
 ## Contact
 
-Questions, concerns, or feedback? Email **[shendanny1@gmail.com](mailto:shendanny1@gmail.com)**.
+Questions, concerns, or feedback? Email **[legal@paceapp.ca](mailto:legal@paceapp.ca)**.
 
 </div>

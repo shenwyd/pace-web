@@ -4,7 +4,7 @@ title: Support
 permalink: /support/
 ---
 
-Need help with Pace, found a bug, or want to share feedback? Email **[shendanny1@gmail.com](mailto:shendanny1@gmail.com)** and you'll hear back within a few days.
+Need help with Pace, found a bug, or want to share feedback? Email **[support@paceapp.ca](mailto:support@paceapp.ca)** and you'll hear back within a few days.
 
 This page covers the questions that come up most often.
 
@@ -87,7 +87,7 @@ If you've set a home address in the You tab, Pace will pre-load it as the dropof
 
 ### The app crashed / something doesn't work.
 
-Sorry — email **[shendanny1@gmail.com](mailto:shendanny1@gmail.com)** with:
+Sorry — email **[support@paceapp.ca](mailto:support@paceapp.ca)** with:
 
 - The iPhone model you're using (e.g. "iPhone 15 Pro")
 - The version of Pace you have (visible at the bottom of the You tab)
@@ -111,4 +111,4 @@ Squad is a UI placeholder in v1 — it shows the Face ID gate but no real backen
 
 ## Contact
 
-For anything not covered above, email **[shendanny1@gmail.com](mailto:shendanny1@gmail.com)**.
+For anything not covered above, email **[support@paceapp.ca](mailto:support@paceapp.ca)**.
