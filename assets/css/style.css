@@ -628,3 +628,144 @@ footer {
   .policy-body { padding: 16px 24px 64px; }
   .callout { padding: 28px 22px; border-radius: 18px; }
 }
+
+/* ============================================================
+   Interactivity layer — scroll reveals, motion, CSS app mockups
+   Added 2026-06-03 for the Pace Social showcase. CSS-first;
+   the tiny JS in scroll.js only toggles .in-view. Everything
+   degrades gracefully with no JS and respects reduced-motion.
+   ============================================================ */
+
+/* ---------- scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.in-view { opacity: 1; transform: none; }
+/* stagger children when a container reveals */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-stagger.in-view > * { opacity: 1; transform: none; }
+.reveal-stagger.in-view > *:nth-child(2) { transition-delay: 0.08s; }
+.reveal-stagger.in-view > *:nth-child(3) { transition-delay: 0.16s; }
+.reveal-stagger.in-view > *:nth-child(4) { transition-delay: 0.24s; }
+.reveal-stagger.in-view > *:nth-child(5) { transition-delay: 0.32s; }
+.reveal-stagger.in-view > *:nth-child(6) { transition-delay: 0.40s; }
+
+/* hero phone: a gentle perpetual float */
+@keyframes pace-float {
+  0%, 100% { transform: translateY(0) rotate(-1.5deg); }
+  50%      { transform: translateY(-14px) rotate(-1.5deg); }
+}
+.hero .phone { animation: pace-float 6s ease-in-out infinite; }
+
+/* feature phones tilt slightly toward the copy, straighten on reveal */
+.feature .phone { transform: rotate(3deg); transition: transform 0.9s cubic-bezier(0.22,1,0.36,1); }
+.feature .reveal.in-view .phone,
+.feature.reverse .phone { transform: rotate(-3deg); }
+.in-view .phone { transform: rotate(0deg) !important; }
+
+/* subtle accent glow that breathes behind the hero phone */
+.hero-art { position: relative; }
+.hero-art::before {
+  content: "";
+  position: absolute; inset: -8% -4%;
+  background: radial-gradient(closest-side, var(--accent-soft), transparent 70%);
+  opacity: 0.55; filter: blur(18px); z-index: -1;
+  animation: pace-pulse 7s ease-in-out infinite;
+}
+@keyframes pace-pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 0.75; } }
+
+/* ---------- CSS app mockups (refined — no screenshots) ---------- */
+.mock { width:100%; height:100%; display:flex; flex-direction:column;
+        background:var(--bg); font-family:var(--sans); position:relative; overflow:hidden; }
+
+/* iOS-style status bar */
+.mock-status { display:flex; justify-content:space-between; align-items:center;
+        padding:14px 20px 4px; font:600 12px/1 var(--sans); color:var(--ink); }
+.mock-status .sig { display:flex; gap:3px; align-items:flex-end; }
+.mock-status .sig i { width:3px; background:var(--ink); border-radius:1px; display:block; }
+.mock-status .sig i:nth-child(1){height:5px} .mock-status .sig i:nth-child(2){height:7px}
+.mock-status .sig i:nth-child(3){height:9px} .mock-status .sig i:nth-child(4){height:11px}
+.mock-batt { width:22px; height:11px; border:1.4px solid var(--ink); border-radius:3px; position:relative; opacity:.9; }
+.mock-batt::after { content:""; position:absolute; inset:1.5px; right:6px; background:var(--ink); border-radius:1px; }
+.mock-batt::before { content:""; position:absolute; right:-3px; top:3px; width:2px; height:5px; background:var(--ink); border-radius:0 1px 1px 0; }
+
+.mock-head { display:flex; align-items:center; justify-content:space-between; padding:8px 18px 12px; }
+.mock-head .logo { font:800 17px/1 var(--display); color:var(--ink); }
+.mock-head .logo b { color:var(--accent); }
+.mock-head .ico { width:26px; height:26px; border-radius:50%; background:var(--paper);
+        border:1px solid var(--line); display:grid; place-items:center; font-size:12px; color:var(--ink-soft); }
+
+/* a believable "photo": layered warm night scene with soft lights */
+.photo { position:absolute; inset:0;
+  background:
+    radial-gradient(20px 20px at 72% 26%, rgba(255,196,120,.9), transparent 70%),
+    radial-gradient(14px 14px at 84% 40%, rgba(255,150,90,.8), transparent 70%),
+    radial-gradient(26px 26px at 22% 72%, rgba(120,170,210,.7), transparent 72%),
+    radial-gradient(40% 60% at 60% 30%, rgba(255,120,60,.35), transparent 65%),
+    linear-gradient(165deg, #20242e 0%, #3a3142 45%, #5a3b3a 100%); }
+.photo::after { content:""; position:absolute; inset:0;
+  background:linear-gradient(180deg, transparent 55%, rgba(0,0,0,.4)); }
+
+/* — feed post card — */
+.mock-feed { gap:0; }
+.mock-post { margin:0 16px; }
+.mock-post .by { display:flex; align-items:center; gap:9px; margin-bottom:10px; }
+.mock-post .av { width:30px; height:30px; border-radius:50%;
+        background:linear-gradient(135deg, var(--accent), #ff8a5c); display:grid; place-items:center;
+        font:800 12px/1 var(--display); color:#fff; }
+.mock-post .nm { font:700 13px/1.2 var(--sans); color:var(--ink); }
+.mock-post .nm small { display:block; font:500 10px/1.3 var(--mono); color:var(--ink-faint); margin-top:2px; }
+.mock-shot { position:relative; border-radius:20px; overflow:hidden; aspect-ratio:3/4;
+        box-shadow:0 10px 28px rgba(26,22,18,.22); }
+/* front-camera inset, top-left, like the real dual-cam */
+.mock-shot .selfie { position:absolute; top:11px; left:11px; width:34%; aspect-ratio:3/4;
+        border-radius:13px; border:2.5px solid rgba(255,255,255,.92); overflow:hidden;
+        box-shadow:0 6px 14px rgba(0,0,0,.4); }
+.mock-shot .selfie .face { position:absolute; inset:0;
+        background:radial-gradient(60% 45% at 50% 38%, #e6b48c, #b07d54 70%, #7c5638); }
+.mock-shot .selfie .face::after { content:""; position:absolute; left:50%; top:42%;
+        width:42%; height:30%; transform:translateX(-50%); border-radius:50%;
+        background:radial-gradient(closest-side, rgba(60,40,30,.55), transparent); }
+.mock-shot .reacts { position:absolute; bottom:12px; left:12px; display:flex; gap:6px; }
+.mock-shot .reacts span { width:26px; height:26px; border-radius:50%; background:rgba(255,255,255,.95);
+        display:grid; place-items:center; font-size:13px; box-shadow:0 3px 8px rgba(0,0,0,.3); }
+.mock-shot .live { position:absolute; top:12px; right:12px; font:700 8px/1 var(--mono);
+        letter-spacing:.5px; color:#fff; background:rgba(0,0,0,.45); padding:5px 7px; border-radius:20px;
+        backdrop-filter:blur(4px); }
+
+/* — capture prompt — */
+.mock-capture { background:#15120f; align-items:center; justify-content:flex-start; }
+.mock-capture .pday { width:100%; text-align:center; padding:18px 0 4px;
+        font:700 11px/1 var(--mono); letter-spacing:1px; color:rgba(255,255,255,.55); }
+.mock-capture .ping { font:800 18px/1 var(--display); color:#fff; padding:2px 0 16px; }
+.mock-capture .ping b { color:var(--accent); }
+.mock-capture .frame { width:78%; aspect-ratio:3/4; border-radius:22px; position:relative;
+        overflow:hidden; box-shadow:0 16px 40px rgba(0,0,0,.5); }
+.mock-capture .frame .selfie { position:absolute; top:12px; left:12px; width:36%; aspect-ratio:3/4;
+        border-radius:14px; border:2.5px solid rgba(255,255,255,.92); overflow:hidden; }
+.mock-capture .frame .selfie .face { position:absolute; inset:0;
+        background:radial-gradient(60% 45% at 50% 38%, #e6b48c, #b07d54 70%, #7c5638); }
+.mock-capture .shutter { margin:22px 0 8px; width:58px; height:58px; border-radius:50%;
+        background:#fff; box-shadow:0 0 0 4px rgba(255,255,255,.25), 0 0 0 7px rgba(255,255,255,.12); }
+.mock-capture .timer { font:700 11px/1 var(--mono); color:rgba(255,255,255,.7); }
+
+/* ---------- reduced motion: honor the user's OS setting ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-stagger > * { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .hero .phone, .hero-art::before { animation: none !important; }
+  .feature .phone, .in-view .phone { transform: none !important; }
+}
+
+/* social-first: the safety mention is now a slim inline note, not a feature block */
+.safety-note { max-width: 720px; margin: 0 auto; text-align: center;
+  font: 500 18px/1.6 var(--sans); color: var(--ink-soft); }
+.safety-note .cap { display: block; margin-bottom: 12px; }

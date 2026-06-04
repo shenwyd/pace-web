@@ -29,7 +29,7 @@ Pace is a social app with a safety layer, not a medical resource. In any real em
 
 ### What is Pace?
 
-Pace is a BeReal-style social app for going out. Once a night you get a prompt to capture the moment with a dual-camera (front + back) photo and share it with friends or publicly, then react with emoji. Underneath the social layer is a safety layer: log your drinks, set a ride-home plan, fire off an SOS, and reach a recovery guide when you need one. Go out, stay connected, get home.
+Pace is a social app for going out with friends. Once a night you get a prompt to capture the moment with a dual-camera (front + back) photo and share it with friends or publicly, then react with emoji. Posts disappear after 24 hours. A few safety tools — ride plan, SOS, a recovery guide — come bundled in for when the night needs them.
 
 ---
 
@@ -121,7 +121,7 @@ Your **safety and drink data stays on your device** — it never touches our ser
 
 ### Who is Pace for?
 
-Pace is for people **17+ and at or above the legal drinking age** in their region. It's about staying connected and getting home safe — not a "get wasted" app. Drink responsibly, look out for your friends, and the safest amount is always the one you're comfortable with.
+Pace is for people **at or above the legal drinking age** where they live. It's about going out with friends and staying connected — not a "get wasted" app. Drink responsibly, look out for your friends, and the safest amount is always the one you're comfortable with.
 
 ---
 

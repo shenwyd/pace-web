@@ -1,31 +1,31 @@
 ---
 layout: default
 title: Pace
-description: Pace is a social app for going out with friends — BeReal-style. Once a night, capture a dual-camera photo of your night, share it, and react to your friends'. Underneath sits a quiet safety layer — ride plan, SOS, and a morning-after recovery guide. 17+. In development.
+description: Pace is a social app for going out with friends. Once a night, capture a dual-camera photo of your night, share it, and react to your friends'. For people of legal drinking age. In development.
 ---
 <main>
 
   <!-- HERO -->
   <section class="hero">
     <div class="shell hero-grid">
-      <div class="hero-copy">
+      <div class="hero-copy reveal">
         <span class="pill">In development · iPhone</span>
         <h1>Share your night.<br>Look out for <span class="accent">each other.</span></h1>
         <p class="lede">
-          Pace is BeReal for your night out — with your friends actually
-          looking out for you. Once a night, capture where you are, share it,
-          and react to theirs. A quiet safety layer rides along underneath.
+          One real photo a night, shared with the friends you go out with.
+          Capture where you are, see where they are, and react to each other's
+          nights — then it's gone by morning.
         </p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="{{ '/#features' | relative_url }}">See how it works</a>
-          <a class="btn btn-ghost" href="{{ '/#safety' | relative_url }}">The safety layer</a>
         </div>
-        <p class="hero-foot">For ages 17+ at or above the legal drinking age. Please drink responsibly. iPhone only at launch.</p>
+        <p class="hero-foot">For people of legal drinking age. Please drink responsibly. iPhone only at launch.</p>
       </div>
-      <div class="hero-art">
+      <div class="hero-art reveal">
         <div class="phone">
           <div class="phone-screen">
-            <img src="{{ '/assets/img/screens/tonight.png' | relative_url }}" alt="Pace on iPhone — the nightly capture prompt and a friend's shared night.">
+            <div class="mock mock-feed"><div class="mock-status"><span>11:24</span><span style="display:flex;gap:6px;align-items:center"><span class="sig"><i></i><i></i><i></i><i></i></span><span class="mock-batt"></span></span></div><div class="mock-head"><span class="logo">Pace<b>.</b></span><span class="ico">+</span></div><div class="mock-post"><div class="by"><span class="av">M</span><span class="nm">Maya<small>@maya · 2 min ago</small></span></div><div class="mock-shot"><span class="photo"></span><span class="live">● LIVE</span><span class="selfie"><span class="face"></span></span><span class="reacts"><span>🔥</span><span>😂</span><span>🥂</span></span></div></div></div>
+            </div>
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@ description: Pace is a social app for going out with friends — BeReal-style. O
   <!-- VALUE CARDS -->
   <section id="values" class="tight">
     <div class="shell">
-      <div class="values">
+      <div class="values reveal-stagger">
         <div class="value-card">
           <div class="icon">●</div>
           <h3>One real moment a night</h3>
@@ -48,8 +48,8 @@ description: Pace is a social app for going out with friends — BeReal-style. O
         </div>
         <div class="value-card">
           <div class="icon blue">→</div>
-          <h3>Safety, built in</h3>
-          <p>A ride-home plan, an SOS to reach your people, and a morning-after guide sit quietly under the feed — there when the night gets messy.</p>
+          <h3>Gone in the morning</h3>
+          <p>Posts are ephemeral — they vanish after 24 hours. No highlight reel, no archive to live down. Here for the night, gone by morning.</p>
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@ description: Pace is a social app for going out with friends — BeReal-style. O
   <!-- FEATURE 1 — How it works -->
   <section id="features">
     <div class="shell">
-      <div class="feature">
+      <div class="feature reveal">
         <div>
           <span class="cap">How it works</span>
           <h3>One prompt. One real photo. Your night, shared.</h3>
@@ -73,7 +73,7 @@ description: Pace is a social app for going out with friends — BeReal-style. O
         <div class="hero-art">
           <div class="phone">
             <div class="phone-screen">
-              <img src="{{ '/assets/img/screens/tonight.png' | relative_url }}" alt="The nightly dual-camera capture screen in Pace.">
+              <div class="mock mock-capture"><div class="pday">FRIDAY · 11:24 PM</div><div class="ping">⏰ Time to <b>Pace</b></div><div class="frame"><span class="photo"></span><span class="selfie"><span class="face"></span></span></div><div class="shutter"></div><div class="timer">0:42 to post</div></div>
             </div>
           </div>
         </div>
@@ -81,36 +81,21 @@ description: Pace is a social app for going out with friends — BeReal-style. O
     </div>
   </section>
 
-  <!-- FEATURE 2 — The safety layer -->
-  <section id="safety" style="background: var(--bg-deep);">
+  <!-- SAFETY — bundled, quiet one-liner (not a headline feature) -->
+  <section id="safety" class="tight" style="background: var(--bg-deep);">
     <div class="shell">
-      <div class="feature reverse">
-        <div>
-          <span class="cap">More than a feed</span>
-          <h3>The social app that <em>actually</em> gets you home.</h3>
-          <p>Most social apps want your night to go forever. Pace wants it to end well. Under the photos sits a quiet safety layer — the part that makes Pace different from any other app on your home screen.</p>
-          <ul>
-            <li>Set a ride-home plan before the night gets blurry</li>
-            <li>SOS to reach your people fast when something's off</li>
-            <li>Log what you're drinking — that part stays on your device</li>
-            <li>A morning-after recovery guide for the day that follows</li>
-          </ul>
-        </div>
-        <div class="hero-art">
-          <div class="phone">
-            <div class="phone-screen">
-              <img src="{{ '/assets/img/screens/safety-warning.png' | relative_url }}" alt="The safety layer in Pace — ride-home plan, SOS, and recovery guide.">
-            </div>
-          </div>
-        </div>
-      </div>
+      <p class="safety-note reveal">
+        <span class="cap">Bundled in, quietly</span>
+        And when the night needs it, a ride-home plan, an SOS to your people, and a
+        morning-after guide are a tap away — there in the background, never in your face.
+      </p>
     </div>
   </section>
 
   <!-- FEATURE 3 — Ephemeral / trust -->
   <section>
     <div class="shell">
-      <div class="feature">
+      <div class="feature reveal">
         <div>
           <span class="cap">Built on trust</span>
           <h3>Here for the night. Gone in the morning.</h3>
@@ -125,7 +110,8 @@ description: Pace is a social app for going out with friends — BeReal-style. O
         <div class="hero-art">
           <div class="phone">
             <div class="phone-screen">
-              <img src="{{ '/assets/img/screens/week.png' | relative_url }}" alt="A friend's shared night in Pace, with a 24-hour countdown.">
+              <div class="mock mock-feed"><div class="mock-status"><span>2:13</span><span style="display:flex;gap:6px;align-items:center"><span class="sig"><i></i><i></i><i></i><i></i></span><span class="mock-batt"></span></span></div><div class="mock-head"><span class="logo">Pace<b>.</b></span><span class="ico">+</span></div><div class="mock-post"><div class="by"><span class="av">J</span><span class="nm">Jordan<small>gone in 23h 51m</small></span></div><div class="mock-shot"><span class="photo"></span><span class="selfie"><span class="face"></span></span><span class="reacts"><span>❤️</span><span>😮</span></span></div></div></div>
+              </div>
             </div>
           </div>
         </div>
@@ -133,17 +119,17 @@ description: Pace is a social app for going out with friends — BeReal-style. O
     </div>
   </section>
 
-  <!-- TRUST BLOCK -->
+  <!-- YOUR NIGHT, YOUR CALL -->
   <section id="trust">
     <div class="shell">
-      <div class="privacy-block">
-        <span class="cap">What you control</span>
-        <h2>Your night is <span class="accent">yours.</span><br>You decide who's in it.</h2>
-        <p>Pace is social, so it has accounts and a server — that's how your friends see your night. But the controls stay with you: who sees your posts, how long anything lasts, and what never leaves your phone at all.</p>
-        <div class="privacy-grid">
+      <div class="privacy-block reveal">
+        <span class="cap">Your night, your call</span>
+        <h2>You decide who's <span class="accent">in it.</span></h2>
+        <p>Share with your whole circle or keep it tight. Go public or stay private. Whatever you post is gone in a day — Pace is built for the night, not the archive.</p>
+        <div class="privacy-grid reveal-stagger">
           <div>
-            <strong>Ephemeral by default</strong>
-            <span>Posts disappear after 24 hours. No feed to scroll back through.</span>
+            <strong>Gone in 24 hours</strong>
+            <span>Every post disappears after a day. No feed to scroll back through.</span>
           </div>
           <div>
             <strong>Public or private</strong>
@@ -154,21 +140,10 @@ description: Pace is a social app for going out with friends — BeReal-style. O
             <span>You choose who you share with and whose nights you see.</span>
           </div>
           <div>
-            <strong>Drink log stays local</strong>
-            <span>What you log for safety lives on your device — not the feed.</span>
-          </div>
-          <div>
             <strong>No ads, no upsells</strong>
             <span>Pace isn't here to sell your night back to you.</span>
           </div>
-          <div>
-            <strong>17+ only</strong>
-            <span>Built for people at or above the legal drinking age.</span>
-          </div>
         </div>
-        <p style="margin-top:32px;">
-          <a href="{{ '/privacy/' | relative_url }}" class="btn btn-primary">Read the full privacy policy</a>
-        </p>
       </div>
     </div>
   </section>
@@ -176,17 +151,17 @@ description: Pace is a social app for going out with friends — BeReal-style. O
   <!-- WHO IT'S FOR -->
   <section class="tight">
     <div class="shell">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="cap">An honest note</span>
         <h2>A real app, for real nights — used responsibly.</h2>
         <p>Pace is about going out with the people you trust and looking out for each other. It's not a party-hard app, and it's not for everyone. Here's where it sits.</p>
       </div>
-      <div class="audience">
+      <div class="audience reveal-stagger">
         <div class="card">
           <span class="cap">Pace is for</span>
           <h3>Friends who go out together and want to keep an eye on each other.</h3>
           <ul>
-            <li>You're 17+ and at or above the legal drinking age</li>
+            <li>You're at or above the legal drinking age where you live</li>
             <li>You want to share your night, not perform it</li>
             <li>You'd rather sort your ride home before the night blurs</li>
             <li>You like knowing your friends have your back, and they know you have theirs</li>
@@ -196,7 +171,7 @@ description: Pace is a social app for going out with friends — BeReal-style. O
           <span class="cap">Pace is not for</span>
           <h3>Anything Pace shouldn't be.</h3>
           <ul>
-            <li>Under-age users — the app is 17+ by design</li>
+            <li>Anyone under the legal drinking age — Pace is gated to it</li>
             <li>Drinking to excess — Pace is about looking out, not egging on</li>
             <li>People in crisis — call your local emergency line first</li>
             <li>A permanent highlight reel — posts here are gone in a day</li>
@@ -209,7 +184,7 @@ description: Pace is a social app for going out with friends — BeReal-style. O
   <!-- CTA -->
   <section>
     <div class="shell">
-      <div class="cta-strip">
+      <div class="cta-strip reveal">
         <span class="cap">Coming soon</span>
         <h2>Pace v2.0 is being built right now.</h2>
         <p>The new Pace — share your night, look out for each other — is in development. Want first access, or to talk through what we're building? Send a note. I read every email.</p>
