@@ -1,4 +1,4 @@
-/* Pace — scroll interactivity (progressive enhancement).
+/* Pace - scroll interactivity (progressive enhancement).
    Adds .in-view to .reveal / .reveal-stagger elements as they enter the
    viewport, and .scrolled to the sticky nav. No dependencies. If JS is off
    or IntersectionObserver is unsupported, everything stays fully visible
